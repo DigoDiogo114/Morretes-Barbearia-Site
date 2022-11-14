@@ -1,10 +1,15 @@
 @charset "utf-8";
 
+a{
+    color: white;
+    font-weight: bolder;
+}
+
 body{
     margin: 0 auto;
     width: 100%;
     font-size: 20px;
-    background-color: wheat;
+    background-color: #001627;
 }
 
 nav{
@@ -30,7 +35,7 @@ a{
 }
 
 header{
-    background-image: url(../img/background_front_1.png);
+    background-image: url(../img/background_front_dark.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -39,6 +44,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 65px 0px;
 }
 
 h1{
@@ -61,6 +67,16 @@ h3{
     font-size: 50px;
 }
 
+h4{
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-left: 5%;
+    width: 30%;
+    font-size: 100px;
+    color: #287f88;
+    border-bottom: 10px solid #287f88;
+}
+
 footer{
     display: flex;
     justify-content: space-around;
@@ -79,18 +95,6 @@ img{
     max-width: 100px;
 }
 
-#agendeNav{
-    padding: 15px 30px;
-    background-color: #001627;
-}
-
-#agendeHeader{
-    border-radius: 30px;
-    padding: 15px 100px;
-    margin: 7px;
-    background-color: #001627;
-}
-
 #sobreArt{
     background-image: url(../img/background_front_1.png);
     background-repeat: no-repeat;
@@ -102,15 +106,9 @@ img{
 #sobreNos{
     padding: 30PX;
     background-color: #287f88;
-    width: 30%;
+    width: 25%;
     margin-left: 5%;
-}
-
-#equipe{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-around;
-    
+    border-bottom: 5px solid black;
 }
 
 #servicos{
@@ -119,7 +117,6 @@ img{
     background-position: center;
     background-attachment: fixed;
     background-size: 100%;
-    margin-top: 100px;
 }
 
 #listServicos{
@@ -130,6 +127,41 @@ img{
     flex-direction: column;
     margin-left: 5%;
     padding: 30PX;
+    border-bottom: 5px solid black;
+}
+
+#midBottom{
+    margin: 50px 0px;
+    align-self: center;
+    background-color: #287f88;
+    color: black;
+}
+
+#equipe{
+    margin: 0 5% 0 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#equipe2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#equipe3{
+    margin: 50px 5%;
+}
+
+#valorTitle{
+    margin-left: 10%;
+    color: white;
+    width: 500px;
+}
+
+#mainValor{
+    display: flex;
+    flex-direction: column;
 }
 
 .listSepara{
@@ -140,7 +172,13 @@ img{
 
 .barber{
     background-color: #287f88;
-    border: 2px black solid;
+    border-top: #287f88 solid 5px;
+}
+
+.barber2{
+    background-color: #287f88;
+    display: flex;
+    margin: 30px 0;
 }
 
 .icon{
@@ -153,7 +191,23 @@ img{
     font-size: 30px;
 }
 
-.link1{
+.bottom{
+    padding: 15px 30px;
+    background-color: #001627;
+}
+
+.barberPhoto{
+    width: 400px;
+}
+
+.barberText{
+    margin: 20px 80px;
+}
+
+.valores{
+    border-top: #287f88 solid 5px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
     color: white;
-    font-weight: bolder;
 }
