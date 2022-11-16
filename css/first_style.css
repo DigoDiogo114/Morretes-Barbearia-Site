@@ -294,6 +294,16 @@ img{
 .bottom{
     padding: 15px 30px;
     background-color: #001627;
+    text-decoration: none;
+    color: var(--white);
+    transition: 1s;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.bottom:hover{
+    background: var(--azul2);
+    opacity: 0.8;
 }
 
 .barberPhoto{
