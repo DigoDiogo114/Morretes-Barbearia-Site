@@ -85,7 +85,6 @@ li{
 .active{
     background-color: var(--azul2);
     padding: 10px;
-    border-radius: 10px;
 }
 
 .content{
@@ -121,14 +120,14 @@ h1{
     font-size: 75px;
     color: #287f88;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     transition: 1.5s;
 }
 
 h2{
     margin: 0 auto;
     padding: 0 auto;
-    font-size: 75px;
+    font-size: 50px;
 }
 
 h3{
@@ -192,7 +191,7 @@ img{
 #listServicos{
     margin: 0 auto;
     background-color: #287f88;
-    width: 30%;
+    max-width: 30%;
     display: flex;
     flex-direction: column;
     margin-left: 5%;
@@ -249,7 +248,7 @@ img{
 #sobreText{
     padding: 30PX;
     background-color: #287f88;
-    height: 450px;
+    height: 100%;
     width: 40%;
 }
 
@@ -296,8 +295,9 @@ img{
 }
 
 .textBox{
-    font-size: 30px;
+    font-size: 20px;
     height: 100%;
+    margin-bottom: 30px;
 }
 
 .bottom{
