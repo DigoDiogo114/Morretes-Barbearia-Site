@@ -6,15 +6,27 @@
         <link href="../css/first_style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <nav>
-            <img id="iconLogo" src="../img/logo.png" alt="logo">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">SOBRE</a></li>
-                <li><a href="team.html">EQUIPE</a></li>
-                <li><a href="valor.html">VALORES</a></li>
-                <li><a class="bottom" href="aaa">AGENDE</a></li>
-            </ul>
+        <nav class="header" id="header" onclick="toogleSidebar()">
+            <button  class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+            <div class="logo_header">
+                <img src="../img/logo.png" class="imglogoheader" alt="intel logo header">
+            </div>
+            <div class="navigation_header" id="navigation_header">
+                <button class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+                <a href="../index.html">HOME</a>
+                <a href="about.html">SOBRE</a>
+                <a href="team.html">EQUIPE</a>
+                <a href="valor.html">VALORES</a>
+                <a href="#" class="active">AGENDE</a>
+            </div>
         </nav>
         <header id="sobreHeader">
             <ul id="sobreLista">
