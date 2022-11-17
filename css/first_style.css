@@ -470,6 +470,25 @@ img{
 }
 
 @media screen and (max-width: 425px){
+    .btn_icon_header{
+        display: block;
+    }
+    .navigation_header{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: var(--azul2);    
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1.5s;
+        margin-left: -100vw;
+}
+@keyframes showSidebar {
+    from{margin-left: -100vw;}
+    to{margin-left: -10vw;}
+
+}  
     body{
         margin: 0 0;
         font-size: 10px;
