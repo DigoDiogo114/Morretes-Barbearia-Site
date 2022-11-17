@@ -71,6 +71,7 @@ li{
 {
     background: var(--azul2);
     opacity: 0.8;
+    padding: 10px 15px;
 }
 
 .active{
@@ -263,7 +264,7 @@ img{
 }
 
 .listSepara{
-    margin: 0px 0px;
+    margin: -20px 0px;
     padding: 0 auto;
     font-size: 80px;
 }
