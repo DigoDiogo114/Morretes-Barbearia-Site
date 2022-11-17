@@ -135,8 +135,7 @@ h4{
     margin-left: 5%;
     width: 50%;
     font-size: 100px;
-    color: #287f88;
-    border-bottom: 10px solid #287f88;
+    color: #287f88; 
 }
 
 footer{
@@ -212,13 +211,14 @@ img{
 #equipe{
     margin: 0 5% 0 5%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #equipe2{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #equipe3{
@@ -353,8 +353,8 @@ img{
 }
 
 .barberPhoto{
-    width: 220px;
-    height: 440px;
+    width: 250px;
+    height: 400px;
 }
 
 .barberText{
@@ -617,11 +617,23 @@ img{
 
     .barberCell{
         height: 300px;
+        margin-right: 15px;
     }
 
     .listSepara{
         border-bottom: none;
         font-size: 6em;
+    }
+}
+
+@media screen and (max-width: 320px){
+    h3{
+        font-size: 2em;
+    }
+
+    header{
+        background-position: center;
+        background-size: 100%;
     }
 }
     
