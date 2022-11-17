@@ -395,6 +395,14 @@ img{
     height: 600px;
 }
 
+@media screen and (max-width: 1160px) {
+    .listSepara{
+        font-size: 50px;
+        margin: -10px 0;
+    }
+    
+}
+
 @media screen and (max-width: 768px){ 
     h1{
         font-size: 45px;
@@ -636,4 +644,4 @@ img{
         background-position: center;
         background-size: 100%;
     }
-}   
+}
