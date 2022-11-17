@@ -395,26 +395,7 @@ img{
     height: 600px;
 }
 
-@media screen and (max-width: 768px){
-    .btn_icon_header{
-        display: block;
-    }
-    .navigation_header{
-        position: absolute;
-        flex-direction: column;
-        top: 0;
-        background-color: var(--dark5);    
-        height: 100%;
-        width: 35vw;
-        padding: 1em;
-        animation-duration: 1s;
-        margin-left: -100vw;
-}
-@keyframes showSidebar {
-    from{margin-left: -100vw;}
-    top{margin-left: -10vw;}
-
-}   
+@media screen and (max-width: 768px){ 
     h1{
         font-size: 45px;
     }
