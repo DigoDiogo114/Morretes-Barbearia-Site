@@ -499,6 +499,7 @@ img{
     }
 
     h3{
+        font-size: 3em;
         margin-bottom: 5px;
     }
 
@@ -616,6 +617,11 @@ img{
 
     .barberCell{
         height: 300px;
+    }
+
+    .listSepara{
+        border-bottom: none;
+        font-size: 6em;
     }
 }
     
