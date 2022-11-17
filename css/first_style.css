@@ -108,8 +108,8 @@ header{
 h1{
     margin: 0 auto;
     padding: 0 auto;
-    width: 50%;
-    font-size: 75px;
+    width: 90%;
+    font-size: 60px;
     color: #287f88;
     text-align: center;
     height: 100%;
@@ -125,14 +125,15 @@ h2{
 h3{
     margin: 0 auto;
     padding: 0 auto;
-    font-size: 50px;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 h4{
     margin: 0 auto;
     padding: 0 auto;
     margin-left: 5%;
-    width: 30%;
+    width: 50%;
     font-size: 100px;
     color: #287f88;
     border-bottom: 10px solid #287f88;
@@ -157,11 +158,16 @@ img{
 }
 
 #sobreArt{
-    background-image: url(../img/background_front_1.png);
+    background-image: url(../img/barbearia1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: 100%;
+    display: flex;
+}
+
+#sobreArt img{
+    width: 0%;
 }
 
 #sobreNos{
@@ -173,11 +179,16 @@ img{
 }
 
 #servicos{
-    background-image: url(../img/background_front_1.png);
+    background-image: url(../img/barbearia2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: 100%;
+    display: flex;
+}
+
+#servicos img{
+    width: 0%;
 }
 
 #listServicos{
@@ -229,7 +240,30 @@ img{
     display: flex;
     align-items: center;
     margin: 50px 50px;
-    background-image: url(../img/background_front_1.png);
+    background-image: url(../img/barbearia3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#sobreMain2{
+    display: flex;
+    align-items: center;
+    margin: 50px 50px;
+    background-image: url(../img/barbearia4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#sobreMain2 img{
+    width: 0px;
+}
+
+#sobreMain img{
+    width: 0px;
 }
 
 #sobreImg{
@@ -257,7 +291,10 @@ img{
     justify-content: start;
 }
 
-#sobre
+#lastHeader{
+    margin-top: 20px;
+    width: 100%;
+}
 
 .listBig{
     font-size: 50px;
@@ -267,6 +304,14 @@ img{
     margin: -20px 0px;
     padding: 0 auto;
     font-size: 80px;
+    font-weight: bold;
+}
+
+.listHeader{
+    margin: 0px 0px;
+    padding: 0 auto;
+    font-size: 60px;
+    font-weight: bold;
 }
 
 .barber{
@@ -277,7 +322,8 @@ img{
 .barber2{
     background-color: #287f88;
     display: flex;
-    margin: 30px 0;
+    margin: 30px 20%;
+    justify-content: center;
 }
 
 .icon{
@@ -288,7 +334,6 @@ img{
 
 .textBox{
     font-size: 20px;
-    height: 100%;
     margin-bottom: 30px;
 }
 
@@ -308,11 +353,12 @@ img{
 }
 
 .barberPhoto{
-    width: 400px;
+    width: 220px;
+    height: 440px;
 }
 
 .barberText{
-    margin: 20px 80px;
+    margin: 20px 30px;
 }
 
 .valores{
@@ -321,6 +367,31 @@ img{
     justify-content: space-between;
     margin: 0 10%;
     color: white;
+}
+
+.telFooter{
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.hourFooter{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.divFooter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerSepara{
+    margin: 0px 10px;
+}
+
+.barberCell{
+    width: 400px;
+    height: 600px;
 }
 
 @media screen and (max-width: 768px){
@@ -342,6 +413,189 @@ img{
     from{margin-left: -100vw;}
     top{margin-left: -10vw;}
 
+}   
+    h1{
+        font-size: 45px;
+    }
+
+    h3{
+        font-size: 40px;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #sobreArt{
+        background-attachment: local;
+    }
+
+    #sobreNos{
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    #servicos{
+        background-attachment: local;
+    }
+
+    #listServicos{
+        margin: 0 auto;
+        max-width: 60%;
+    }
+
+    #sobreMain{
+        background-image: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #sobreMain img{
+        width: 700px;
+    }
+
+    #sobreText{
+        width: 100%;
+    }
+
+    .barber2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .barber2 img{
+        width: 700px;
+    }
+
 }
+
+@media screen and (max-width: 425px){
+    body{
+        margin: 0 0;
+        font-size: 10px;
+    }
+
+    h1{
+        transition: none;
+        font-size: 25px;
+    }
+
+    h3{
+        margin-bottom: 5px;
+    }
+
+    h4{
+        border-bottom: none;
+        font-size: 50px;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .barber p{
+        font-size: 20px;
+    }
+
+    .barber img{
+        max-width: 200px;
+    }
+
+    .barber{
+        display: flex;
+        border-top: none;
+    }
+
+    .barber2{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .barber2 img{
+        width: 425px;
+    }
+
+    #sobreMain{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+    }
+
+    #sobreMain img{
+        width: 100%;
+        width: 425px;
+    }
+
+    #sobreMain2{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+    }
+
+    #sobreMain2 img{
+        width: 100%;
+        width: 425px;
+    }
+
+    #sobreText{
+        width: 100%;
+    }
+
+    #sobreArt{
+        margin: 0 auto;
+        background-image: none;
+        flex-direction: column;
+    }
+
+    #sobreArt img{
+        width: 425px;
+    }
+
+    #servicos{
+        margin: 0 auto;
+        background-image: none;
+        flex-direction: column;
+    }
+
+    #servicos img{
+        width: 425px;
+    }
+
+    #listServicos{
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    #equipe{
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    #valorTitle{
+        width: 90%;
+    }
+
+    #midBottom{
+        margin: 10px 0;
+    }
+
+    #sobreNos{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .bottom{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
 }
     
